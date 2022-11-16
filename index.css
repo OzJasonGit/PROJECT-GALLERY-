@@ -91,14 +91,37 @@ body {
 /*******************************************************************/
 #FLEXBOX {
     width: 100%;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     grid-area: FLEXBOX_AREA;
 }
 
 
+.ITEM-HOLDER {
+    max-width: 500px;
+    min-width: 300px;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-rows: 400px auto;
+    grid-template-areas: "IMAGE"                        
+                         "DROPDOWN";
+    
+    background-color: aquamarine;  
 
+}
+
+.DROPDOWN {
+    width: 100%;
+    height: 100px;
+}
+
+
+.IMAGE {
+    width: 100%;
+    height: 100%;
+}
 
 
 
