@@ -11,7 +11,7 @@ body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: rosybrown;
+    background-color: #2e2e2e;
 }
 
 
@@ -27,9 +27,47 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: rgb(237, 216, 247);
 }
 
+
+
+
+
+.horizontal {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-row-gap: 0px;
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-align-content: start;
+    -ms-flex-line-pack: start;
+    align-content: start;
+    grid-template-columns: 1fr;
+    grid-template-areas: "HEADER"
+        "MAIN"
+        "FOOTER"
+
+}
+
+
+
+#TOP {
+    grid-area: HEADER;
+}
+
+#MAIN {
+    grid-area: MAIN;
+}
+
+
+#BOTTOM {
+    grid-area: FOOTER;
+}
 /*******************************************************************/
 
 
@@ -68,7 +106,7 @@ body {
     grid-area: MAIN_TITLE;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 40px;
-    grid-template-areas: "TITLE TITLE TITLE ";   
+    grid-template-areas: "TITLE TITLE . ";   
 }
 
 
@@ -103,7 +141,7 @@ body {
 
 
 .ITEM-HOLDER {
-    max-width: 500px;
+    max-width: 600px;
     min-width: 300px;
     display: grid;
     grid-row-gap: 40px;
@@ -135,6 +173,30 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#CONTAINER-BOTTOM {
+    display: flex;
+    width: 100%;
+    background-color: #2e2e2e;
+    justify-content: center;
+}
+
+
+
+
 /******************************FONTS********************************/
 
 h1 {
@@ -142,6 +204,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 5rem;
+    overflow-wrap: break-word;
 }
 
 
@@ -150,6 +213,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 2.5rem;
+    overflow-wrap: break-word;
 }
 
 
@@ -158,6 +222,7 @@ h3 {
     font-weight: 700;
     font-style: normal;
     font-size: 1 rem;
+    overflow-wrap: break-word;
 }
 
 p {
@@ -165,6 +230,7 @@ p {
     font-weight: 400;
     font-style: normal;
     font-size: 1rem;
+    overflow-wrap: break-word;
 }
 /******************************FONTS********************************/
 
@@ -174,7 +240,7 @@ p {
 
 @media only screen and (max-width: 1500px) {
     body {
-        background-color: lightblue;
+        background-color: #2e2e2e;
     }
 
     #FLEXBOX {
@@ -186,13 +252,13 @@ p {
         grid-area: FLEXBOX_AREA;
         padding: 50px;
         margin: 50px;
-        padding-bottom: 50px;
+        row-gap: 50px; 
 }
 
 
 .ITEM-HOLDER {
     max-width: 100%;
-    min-width: 300px;
+    min-width: 60px;
     display: grid;
     grid-row-gap: 40px;
     grid-template-rows: 400px auto;
