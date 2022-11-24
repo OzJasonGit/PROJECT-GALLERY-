@@ -96,6 +96,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     grid-area: FLEXBOX_AREA;
+    padding: 50px;
+    margin: 50px;
+      
 }
 
 
@@ -169,7 +172,7 @@ p {
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1500px) {
     body {
         background-color: lightblue;
     }
@@ -181,6 +184,23 @@ p {
         flex-direction: column;
         justify-content: space-between;
         grid-area: FLEXBOX_AREA;
+        padding: 50px;
+        margin: 50px;
+        padding-bottom: 50px;
+}
+
+
+.ITEM-HOLDER {
+    max-width: 100%;
+    min-width: 300px;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-rows: 400px auto;
+    grid-template-areas: "IMAGE"
+        "DROPDOWN";
+
+    background-color: aquamarine;
+
 }
 
 
