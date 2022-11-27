@@ -97,6 +97,67 @@ body {
 
 
 
+
+
+
+
+
+
+
+/****************************************************HEADER CLOCK*******************************************/
+#HEADER {
+    width: 90vw;
+    height: auto;
+    display: grid;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto auto;
+    background-color: #2e2e2e;
+    grid-template-areas: ". . ."
+        ". CLOCK ."
+        ". . .";
+}
+
+
+
+#CLOCK-CONTAINER {
+    grid-area: CLOCK;
+}
+
+
+
+
+#CONTAINER-TOP {
+    display: flex;
+    width: 100%;
+    background-color: #2e2e2e;
+    justify-content: center;
+}
+
+/****************************************************HEADER CLOCK*******************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #TOP {
     grid-area: HEADER;
 }
@@ -113,7 +174,7 @@ body {
 
 
 #OZ {
-    background-image: url(assets/images/personal-website.PNG);
+    background-color: #efefef;
     background-size: cover;
     background-position: center;  
 }
@@ -121,7 +182,7 @@ body {
 
 
 #MOVIES {
-    background-image: url(assets/images/database-project.PNG);
+    background-color: #2e2e2e;
     background-size: cover;
     background-position: center;
 }
@@ -129,7 +190,7 @@ body {
 
 
 #TARANTINO {
-    background-image: url(assets/images/tarantino.PNG);
+    background-color: rgb(237, 216, 247);;
     background-size: cover;
     background-position: center;
 }
@@ -137,7 +198,7 @@ body {
 
 
 #PACMAN {
-    background-image: url(assets/images/pac-man.PNG);
+    background-color: aquamarine;;
     background-size: cover;
     background-position: center;
 }
@@ -204,6 +265,11 @@ body {
     width: 100%;
     height: auto;
     max-width: 700px;
+}
+
+
+.IMAGE {
+    padding: 20px;
 }
 /*******************************************************************/
 
@@ -289,6 +355,33 @@ body {
 
 /******************************FONTS********************************/
 
+
+#CLOCK {
+    font-family: sofia-pro, sans-serif;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    color: #d9d9d9;
+    text-align: left;
+}
+
+
+#DATE {
+    font-family: sofia-pro, sans-serif;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #d9d9d9;
+    text-align: left;
+}
+
+
+
+
 h1 {
     font-family: sofia-pro, sans-serif;
     font-weight: 700;
@@ -330,7 +423,7 @@ p {
 
 @media only screen and (max-width: 1500px) {
     body {
-        background-color: #2e2e2e;
+        background-color: #6aa4ce;
     }
 
     #FLEXBOX {
@@ -355,7 +448,6 @@ p {
     grid-template-areas: "IMAGE"
         "DROPDOWN";
 
-    background-color: aquamarine;
 
     }
 }
@@ -535,3 +627,73 @@ h1 a {
 }
 
 /******************************ACCORDION***************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************FOOTER*************************************************/
+#FOOTER {
+    width: 90vw;
+    height: auto;
+    display: grid;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    background-color: #2e2e2e;
+    grid-template-areas: ". . ."
+        ". TEXT ."
+        ". IMAGE ."
+}
+
+
+
+
+#CONTAINER-BOTTOM {
+    display: flex;
+    width: 100%;
+    background-color: #2e2e2e;
+    justify-content: center;
+}
+
+
+
+
+#FOOTER-TEXT {
+    grid-area: TEXT;
+}
+
+
+
+#FOOTER-IMAGE {
+    display: flex;
+    grid-area: IMAGE;
+    justify-content: right;
+}
+
+/****************************************************FOOTER*************************************************/
