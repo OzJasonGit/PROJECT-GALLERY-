@@ -40,3 +40,6 @@ function date(){
     document.getElementById("DATE").innerText = todaysDate;
    }
    date();
+
+
+
